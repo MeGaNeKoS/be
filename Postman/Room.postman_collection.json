@@ -1,0 +1,741 @@
+{
+	"info": {
+		"_postman_id": "765687bb-da2f-43d3-bf60-1bb1e5c22d2e",
+		"name": "Room",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28368937"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"example@gmail.com\",\r\n    \"username\": \"testname\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/register",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user1@gmail.com\",\r\n    \"username\": \"user1\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "308"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"134-w2EUGDuUh5quNm29NlsLlFVEO6c\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 14:59:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXNlcjEiLCJzdWIiOiI2NTkyZDM2ZDU4ZDQxYWM1NWNhZmJlY2IiLCJpYXQiOjE3MDQxMjExOTcsImV4cCI6MTcwNjcxMzE5N30._0z2GYEx2sx-ahNNb-igvizdZOfsgiJe8lBOMFrTAgI\",\n    \"refreshToken\": \"a710dca82eda7aaec3f0b8be902bef7d3bd292a4cc230e7d\"\n}"
+				},
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user2@gmail.com\",\r\n    \"username\": \"user2\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "308"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"134-5RSd4GrAsEi+uNQgbK/1sI/vjPU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 15:00:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIyQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXNlcjIiLCJzdWIiOiI2NTkyZDM4NTU4ZDQxYWM1NWNhZmJlY2YiLCJpYXQiOjE3MDQxMjEyMjEsImV4cCI6MTcwNjcxMzIyMX0.S3RhIBwuje_S1x-t4JpVIVyg8ex7LVCbjUgvVdUeOyM\",\n    \"refreshToken\": \"661d9b5847e23181b3ee2cf32fd482823ea4dae98090352c\"\n}"
+				},
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user3@gmail.com\",\r\n    \"username\": \"user3\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "308"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"134-cc8IuvvbR773uGeBmIiIu9914z4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 15:20:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIzQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXNlcjMiLCJzdWIiOiI2NTkyZDg0YTUzNzc0NDI0Nzc1NWRhODQiLCJpYXQiOjE3MDQxMjI0NDIsImV4cCI6MTcwNjcxNDQ0Mn0.Iuxez2c-1nksl5HLrw5jyRmUPvffbmQDSVmbO2aDooY\",\n    \"refreshToken\": \"74cb55689732897a68a15ee27c5df7bbf7c18cdc8725ae0a\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXNlcjEiLCJzdWIiOiI2NTkyZDM2ZDU4ZDQxYWM1NWNhZmJlY2IiLCJpYXQiOjE3MDQxMjExOTcsImV4cCI6MTcwNjcxMzE5N30._0z2GYEx2sx-ahNNb-igvizdZOfsgiJe8lBOMFrTAgI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"example@gmail.com\",\r\n    \"username\": \"testname\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/room",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"members\": [\"6592d38558d41ac55cafbecf\"],\r\n    \"name\": \"testRoom\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api//room",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"",
+								"room"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "126"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7e-b/gDLuK526W33yk7iDYqs+SQOsI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 15:11:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"members\": [\n        \"6592d38558d41ac55cafbecf\",\n        \"6592d36d58d41ac55cafbecb\"\n    ],\n    \"name\": \"testRoom\",\n    \"_id\": \"6592d62d29bec11c488392df\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXNlcjEiLCJzdWIiOiI2NTkyZDM2ZDU4ZDQxYWM1NWNhZmJlY2IiLCJpYXQiOjE3MDQxMjExOTcsImV4cCI6MTcwNjcxMzE5N30._0z2GYEx2sx-ahNNb-igvizdZOfsgiJe8lBOMFrTAgI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/room",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/room",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"room"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "382"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17e-GDdQV3paE5d3KxJzfBEvgUfK7JQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 15:12:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6592d62d29bec11c488392df\",\n        \"members\": [\n            \"6592d38558d41ac55cafbecf\",\n            \"6592d36d58d41ac55cafbecb\"\n        ],\n        \"name\": \"testRoom\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6592d63e29bec11c488392e5\",\n        \"members\": [\n            \"6592d38558d41ac55cafbecf\",\n            \"6592d36d58d41ac55cafbecb\"\n        ],\n        \"name\": \"testRoom\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6592d65a29bec11c488392e9\",\n        \"members\": [\n            \"6592d38558d41ac55cafbecf\",\n            \"6592d36d58d41ac55cafbecb\"\n        ],\n        \"name\": \"testRoom\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXNlcjEiLCJzdWIiOiI2NTkyZDM2ZDU4ZDQxYWM1NWNhZmJlY2IiLCJpYXQiOjE3MDQxMjExOTcsImV4cCI6MTcwNjcxMzE5N30._0z2GYEx2sx-ahNNb-igvizdZOfsgiJe8lBOMFrTAgI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/room",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"room"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/room/6592d65a29bec11c488392e9",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"room",
+								"6592d65a29bec11c488392e9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "126"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7e-ROrMoZNBM3xKM7P0ifmhVH5K9Ps\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 15:20:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6592d65a29bec11c488392e9\",\n    \"members\": [\n        \"6592d38558d41ac55cafbecf\",\n        \"6592d36d58d41ac55cafbecb\"\n    ],\n    \"name\": \"testRoom\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Room",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXNlcjEiLCJzdWIiOiI2NTkyZDM2ZDU4ZDQxYWM1NWNhZmJlY2IiLCJpYXQiOjE3MDQxMjExOTcsImV4cCI6MTcwNjcxMzE5N30._0z2GYEx2sx-ahNNb-igvizdZOfsgiJe8lBOMFrTAgI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"members\": [\r\n        \"6592d38558d41ac55cafbecf\",\r\n        \"6592d36d58d41ac55cafbecb\",\r\n        \"6592d84a537744247755da84\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api//room/6592d65a29bec11c488392e9",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"",
+						"room",
+						"6592d65a29bec11c488392e9"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Room",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"members\": [\r\n        \"6592d38558d41ac55cafbecf\",\r\n        \"6592d36d58d41ac55cafbecb\",\r\n        \"6592d84a537744247755da84\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/room/6592d65a29bec11c488392e9",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"room",
+								"6592d65a29bec11c488392e9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "153"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"99-phS064PmOmbsAkYDQaGKOdy2TsY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 15:26:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6592d65a29bec11c488392e9\",\n    \"members\": [\n        \"6592d38558d41ac55cafbecf\",\n        \"6592d36d58d41ac55cafbecb\",\n        \"6592d84a537744247755da84\"\n    ],\n    \"name\": \"testRoom\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXNlcjEiLCJzdWIiOiI2NTkyZDM2ZDU4ZDQxYWM1NWNhZmJlY2IiLCJpYXQiOjE3MDQxMjExOTcsImV4cCI6MTcwNjcxMzE5N30._0z2GYEx2sx-ahNNb-igvizdZOfsgiJe8lBOMFrTAgI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/room/6592d65a29bec11c488392e9",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"room",
+						"6592d65a29bec11c488392e9"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/room/6592d65a29bec11c488392e9",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"room",
+								"6592d65a29bec11c488392e9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "153"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"99-phS064PmOmbsAkYDQaGKOdy2TsY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 15:27:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6592d65a29bec11c488392e9\",\n    \"members\": [\n        \"6592d38558d41ac55cafbecf\",\n        \"6592d36d58d41ac55cafbecb\",\n        \"6592d84a537744247755da84\"\n    ],\n    \"name\": \"testRoom\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Fail/Not member",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/room/6592d65a29bec11c488392e9",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"room",
+								"6592d65a29bec11c488392e9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 15:27:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}

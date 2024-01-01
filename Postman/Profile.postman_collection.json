@@ -1,0 +1,539 @@
+{
+	"info": {
+		"_postman_id": "bf7b56d8-8784-4754-978b-b1e73270f0f8",
+		"name": "Profile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28368937"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"example@gmail.com\",\r\n    \"username\": \"testname\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"example@gmail.com\",\r\n    \"username\": \"testname\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "315"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13b-XspwIqFSJ4tP6NI3er51uP6wPlg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 10:11:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0ZXN0bmFtZSIsInN1YiI6IjY1OTI4ZmE3MjQ1MzY3ZWJjMzdjNmRkNyIsImlhdCI6MTcwNDEwMzg3NiwiZXhwIjoxNzA2Njk1ODc2fQ.ohQ2xKmjYasvHXAIfUF4veMt_adNeOotr1QZOrpfz88\",\n    \"refreshToken\": \"98cd5d5172ba37ea88fe6fe222187d626f6608c98400f74f\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"displayName\": \"abc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/createProfile",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"createProfile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"abc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api//createProfile",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"",
+								"createProfile"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "113"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"71-szzZ/uQzvDBLGtoL0/meTkfM+qU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 10:56:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userId\": \"65928fa7245367ebc37c6dd7\",\n    \"displayName\": \"abc\",\n    \"interests\": [],\n    \"_id\": \"65929a7a37bb7fd63c4d296c\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Create Fail",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"abc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/createProfile",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"createProfile"
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "72"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"48-g1dKBJ6Z9/5SiteULOCakrxLNFY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 10:58:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Profile already exists\",\n    \"error\": \"Conflict\",\n    \"statusCode\": 409\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"displayName\": \"def\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/updateProfile",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"updateProfile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Profile",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"def\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/updateProfile",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"updateProfile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "113"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"71-nn7cI6FDKnc3elYlEV8wCtU8Sw4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 10:59:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"65929a7a37bb7fd63c4d296c\",\n    \"userId\": \"65928fa7245367ebc37c6dd7\",\n    \"displayName\": \"def\",\n    \"interests\": [],\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/getProfile",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"getProfile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/getProfile",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"getProfile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "271"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10f-tb74zd3gQifeK3VD0VmJo3r0eT8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 11:04:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"65929a7a37bb7fd63c4d296c\",\n    \"userId\": \"65928fa7245367ebc37c6dd7\",\n    \"displayName\": \"def\",\n    \"interests\": [],\n    \"__v\": 0,\n    \"profilePicture\": \"F:\\\\Programming\\\\YouApp\\\\be\\\\dist\\\\shared\\\\uploads\\\\[ASW] Bokura no Ameiro Protocol - 09 [1080p HEVC][53CBF22E].mkv_snapshot_11.14.852.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Upload pict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/MeGaNeKo/Pictures/[ASW] Bokura no Ameiro Protocol - 09 [1080p HEVC][53CBF22E].mkv_snapshot_11.14.852.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/uploadProfilePicture",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"uploadProfilePicture"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Upload pict",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/MeGaNeKo/Pictures/[ASW] Bokura no Ameiro Protocol - 09 [1080p HEVC][53CBF22E].mkv_snapshot_11.14.852.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api//uploadProfilePicture",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"",
+								"uploadProfilePicture"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "271"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10f-tb74zd3gQifeK3VD0VmJo3r0eT8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jan 2024 11:04:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"65929a7a37bb7fd63c4d296c\",\n    \"userId\": \"65928fa7245367ebc37c6dd7\",\n    \"displayName\": \"def\",\n    \"interests\": [],\n    \"__v\": 0,\n    \"profilePicture\": \"F:\\\\Programming\\\\YouApp\\\\be\\\\dist\\\\shared\\\\uploads\\\\[ASW] Bokura no Ameiro Protocol - 09 [1080p HEVC][53CBF22E].mkv_snapshot_11.14.852.jpg\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0ZXN0bmFtZSIsInN1YiI6IjY1OTI4ZmE3MjQ1MzY3ZWJjMzdjNmRkNyIsImlhdCI6MTcwNDEwNjQ5MCwiZXhwIjoxNzA2Njk4NDkwfQ.sUJcEUX9vCD7peN0xGE05O-6sf1oyYT28deqpXBxtlw",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}

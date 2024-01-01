@@ -1,0 +1,42 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "unified-app",
+  "compilerOptions": {
+    "assets": ["**/*.ts"],
+    "watchAssets": true
+  },
+  "projects": {
+    "auth": {
+      "root": "service/auth",
+      "entryFile": "main",
+      "sourceRoot": "service/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "service/auth/tsconfig.build.json"
+      }
+    },
+    "message": {
+      "root": "service/message",
+      "entryFile": "main",
+      "sourceRoot": "service/message/src",
+      "compilerOptions": {
+        "tsConfigPath": "service/message/tsconfig.build.json"
+      }
+    },
+    "profile": {
+      "root": "service/profile",
+      "entryFile": "main",
+      "sourceRoot": "service/profile/src",
+      "compilerOptions": {
+        "tsConfigPath": "service/profile/tsconfig.build.json"
+      }
+    },
+    "room": {
+      "root": "service/room",
+      "entryFile": "main",
+      "sourceRoot": "service/room/src",
+      "compilerOptions": {
+        "tsConfigPath": "service/room/tsconfig.build.json"
+      }
+    }
+  }
+}
