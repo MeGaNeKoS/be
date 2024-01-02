@@ -9,7 +9,7 @@ import { TypegooseModule } from "@m8a/nestjs-typegoose";
     TypegooseModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
-        uri: "mongodb+srv://testing:qKMTN3EsTYeI6YS0@cluster0.1a6fi98.mongodb.net/?retryWrites=true&w=majority"
+        uri: configService.get<string>("MONGODB_URI"),
       }),
       inject: [ConfigService],
     }),
